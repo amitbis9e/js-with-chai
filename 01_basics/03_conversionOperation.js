@@ -28,3 +28,35 @@ console.log(typeof stringNumber)
 console.log(stringNumber)
 
 // Number converted into stirng but string shows as number 
+
+
+
+/* **************** operations in String    ************* */
+let value = 10
+console.log(value + 5)
+
+// console.log(5+5)
+// console.log(5-5)
+//console.log(5*5)
+//console.log(5%5)
+//console.log(5/5)
+
+let str1 = "hello"
+let str2 = " amit"
+console.log(str1 + str2)   // Everything goes smooth till now <-----
+
+// lets make some catch in string operational rules
+console.log("2" + 2)  // 22
+console.log(2 + "2")  // 22
+
+console.log("1" + 2 +2) //==> 122     IF String First all treat as a String
+console.log(1 + 2 + "2") // ==> 32    Before sting Numbers add up 
+
+/* ====> Tricky converstion <===== */
+    // zero readability ... zero consistancy
+
+console.log(2 + 3 * 5 -1)
+console.log("" + 5)
+// console.log(++ true)
+console.log("")
+  // Read about pre increment and post increment .... pref Mdn
