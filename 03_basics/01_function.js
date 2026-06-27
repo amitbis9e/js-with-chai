@@ -29,5 +29,37 @@ function loginUserMessage(username){
         return `${username} just logged in`
 }
 
-console.log(loginUserMessage("amit"))
-console.log(loginUserMessage()) // undefined just logged in
+//console.log(loginUserMessage("amit"))
+//console.log(loginUserMessage()) // undefined just logged in
+
+//******** we wanna to add more and more iteams */
+function calculateCardPrice(val1, val2,... num1){   // rest operator
+    return num1
+}
+// console.log(calculateCardPrice(500 , 400, 150,30));
+                        //     val1, val2, ...num1
+
+
+//Object pass in funciton
+const user = {
+    username: "amit",
+    price: 200
+} 
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+// handleObject(user)
+// juarai nhi object bnake fr pass krege direct   
+handleObject({
+    username: "sam",
+    price: 150
+})
+
+// array pass in object
+const newArray = [19,293,494,59]
+function returnSecValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecValue(newArray))
+console.log(returnSecValue([19,293,494,59]))
